@@ -21,9 +21,9 @@ resource "azurerm_virtual_machine" "TN_VM_APP" {
 
   storage_image_reference {
     publisher = "MicrosoftWindowsServer"
-    offer     = "WindowsServerSemiAnnual"
+    offer     = "WindowsServer"
 
-    sku     = "Datacenter-Core-1709-smalldisk"
+    sku     = "2012-R2-Datacenter"
     version = "latest"
   }
 
