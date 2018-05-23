@@ -1,3 +1,4 @@
+# Web RDP rules
 resource "azurerm_network_security_rule" "TN_Security_Rule_Web_RDP_In" {
   name                        = "allow_rdp_in"
   resource_group_name         = "${azurerm_resource_group.TN_Resource.name}"

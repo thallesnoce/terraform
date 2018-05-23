@@ -1,3 +1,5 @@
+#Network Interface Card - NIC
+#Allow the machine to communicate to the network
 resource "azurerm_network_interface" "TN_ANI_APP" {
   name                = "TN_AzureNetworkInterface_App"
   location            = "${var.resource_location}"
@@ -10,6 +12,7 @@ resource "azurerm_network_interface" "TN_ANI_APP" {
   }
 }
 
+#Create the virtual machine for Application purpose
 resource "azurerm_virtual_machine" "TN_VM_APP" {
   name                             = "TN_APP01"
   location                         = "${var.resource_location}"

@@ -1,3 +1,4 @@
+#Creation of the Virtual Network
 resource "azurerm_virtual_network" "TN_VNET" {
   name                = "TN_Virtual_Network"
   resource_group_name = "${azurerm_resource_group.TN_Resource.name}"

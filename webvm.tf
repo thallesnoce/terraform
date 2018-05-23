@@ -1,3 +1,5 @@
+#Network Interface Card - NIC
+#Allow the machine to communicate to the network
 resource "azurerm_network_interface" "TN_ANI_WEB" {
   name                = "TN_AzureNetworkInterface_Web"
   location            = "${var.resource_location}"
@@ -11,6 +13,7 @@ resource "azurerm_network_interface" "TN_ANI_WEB" {
   }
 }
 
+#Create the virtual machine for Web purpose
 resource "azurerm_virtual_machine" "TN_VM_WEB" {
   name                             = "TN_WEB01"
   location                         = "${var.resource_location}"

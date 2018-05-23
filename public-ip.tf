@@ -1,3 +1,4 @@
+#Create a public IP to conect the machine to the internet
 resource "azurerm_public_ip" "TN_PublicIP" {
   name                         = "TN_PublicIP"
   resource_group_name          = "${azurerm_resource_group.TN_Resource.name}"

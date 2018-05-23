@@ -1,4 +1,6 @@
-### Network
+### Network Subnets - 
+#1 for Backend Application
+#1 for Frontend Web Application
 
 resource "azurerm_subnet" "TN_SN_App" {
   name                      = "App"
