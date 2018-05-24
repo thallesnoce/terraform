@@ -9,3 +9,4 @@ The idea is to create:
     
 2 Virtual Machines
 
+The current version the terraform was splitted into layers
